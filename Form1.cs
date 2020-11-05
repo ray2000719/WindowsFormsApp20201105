@@ -14,7 +14,8 @@ namespace WindowsFormsApp20201105
     public partial class Form1 : Form
     {
         List<Image> picture = new List<Image>();
-        
+        Poker p = null;
+        List<int> x;
 
         public Form1()
         {
@@ -23,10 +24,19 @@ namespace WindowsFormsApp20201105
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            picture.Add(Resources.a1);
-            picture.Add(Resources.a2);
-            picture.Add(Resources.a3);
-            picture.Add(Resources.a4);
+            for (int i = 1; i < 5; i++)
+            {
+                string resourceName = i.ToString();
+                string resourceNum = "a" + resourceName;
+                Bitmap bmp = (Bitmap)Properties.Resources.ResourceManager.GetObject(resourceNum);
+                picture.Add(bmp);
+                p = new Poker();
+                x = p.GetPoker(4);
+
+
+
+            }
+            
         }
 
         private void Form1_Shown(object sender, EventArgs e)
@@ -38,13 +48,17 @@ namespace WindowsFormsApp20201105
         {
 
         }
-
+        int i = 0;
         private void Btnpump_Click(object sender, EventArgs e)
         {
-            int x = new Random().Next(4);
-            pbshow.Image = picture[x];
-            int a = x + 1;
-            rtbshow.Text = ""+a;
+            if (i<4)
+            {
+                
+                pbshow.Image = picture[x[i]];
+                rtbshow.Text += x[i] + 1 + ",";
+                i = i + 1;
+            }
+            
         }
     }
 }

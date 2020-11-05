@@ -40,9 +40,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(136, 39);
+            this.label1.Location = new System.Drawing.Point(181, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 29);
+            this.label1.Size = new System.Drawing.Size(239, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "你今天的籤運";
             // 
@@ -50,26 +51,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(480, 188);
+            this.label2.Location = new System.Drawing.Point(640, 235);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 29);
+            this.label2.Size = new System.Drawing.Size(91, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "測試";
             // 
             // rtbshow
             // 
-            this.rtbshow.Location = new System.Drawing.Point(485, 245);
+            this.rtbshow.Location = new System.Drawing.Point(647, 306);
+            this.rtbshow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtbshow.Name = "rtbshow";
-            this.rtbshow.Size = new System.Drawing.Size(149, 131);
+            this.rtbshow.Size = new System.Drawing.Size(197, 163);
             this.rtbshow.TabIndex = 2;
             this.rtbshow.Text = "";
             // 
             // pbshow
             // 
-            this.pbshow.Image = global::WindowsFormsApp20201105.Properties.Resources.a4;
-            this.pbshow.Location = new System.Drawing.Point(141, 94);
+            this.pbshow.Location = new System.Drawing.Point(188, 118);
+            this.pbshow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbshow.Name = "pbshow";
-            this.pbshow.Size = new System.Drawing.Size(182, 282);
+            this.pbshow.Size = new System.Drawing.Size(243, 352);
             this.pbshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbshow.TabIndex = 3;
             this.pbshow.TabStop = false;
@@ -77,9 +80,10 @@
             // btnpump
             // 
             this.btnpump.Font = new System.Drawing.Font("新細明體", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnpump.Location = new System.Drawing.Point(485, 39);
+            this.btnpump.Location = new System.Drawing.Point(647, 49);
+            this.btnpump.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnpump.Name = "btnpump";
-            this.btnpump.Size = new System.Drawing.Size(149, 126);
+            this.btnpump.Size = new System.Drawing.Size(199, 158);
             this.btnpump.TabIndex = 4;
             this.btnpump.Text = "抽";
             this.btnpump.UseVisualStyleBackColor = true;
@@ -87,14 +91,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 562);
             this.Controls.Add(this.btnpump);
             this.Controls.Add(this.pbshow);
             this.Controls.Add(this.rtbshow);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
